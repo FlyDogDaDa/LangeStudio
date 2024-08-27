@@ -1,0 +1,12 @@
+python-dotenv
+google-generativeai
+PyAutoGUI
+pyperclip
+OpenCC
+pyaudio
+silero-vad
+torch
+torchaudio
+numpy
+soundfile
+matplotlib
