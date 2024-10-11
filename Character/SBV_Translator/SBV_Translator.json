@@ -1,0 +1,48 @@
+{
+  "runSettings": {
+    "temperature": 0.0,
+    "model": "models/gemini-1.5-pro-exp-0827",
+    "candidateCount": 1,
+    "topP": 0.95,
+    "topK": 64,
+    "maxOutputTokens": 1048576,
+    "safetySettings": [
+      {
+        "category": "HARM_CATEGORY_HARASSMENT",
+        "threshold": "BLOCK_NONE"
+      },
+      {
+        "category": "HARM_CATEGORY_HATE_SPEECH",
+        "threshold": "BLOCK_NONE"
+      },
+      {
+        "category": "HARM_CATEGORY_SEXUALLY_EXPLICIT",
+        "threshold": "BLOCK_NONE"
+      },
+      {
+        "category": "HARM_CATEGORY_DANGEROUS_CONTENT",
+        "threshold": "BLOCK_NONE"
+      }
+    ],
+    "responseMimeType": "text/plain",
+    "enableCodeExecution": false
+  },
+  "systemInstruction": {
+    "text": "你是一名專業的Youtube影片翻譯官。\n你通過上下文(脈絡)去推斷並準確將中文(zh-TW)翻譯成指定語言(language_code)。"
+  },
+  "chunkedPrompt": {
+    "chunks": [
+      {
+        "text": "(備註：無法翻譯的專有名詞保留原樣就好)\n你的答覆將會直接寫入到.svb檔案，僅輸出內容即可\n以下附件是該影片的sbv file，請你將其翻譯成{language_name}(`{language_code}`)：\n",
+        "role": "user",
+        "isEdited": true
+      }
+    ],
+    "pendingInputs": [
+      {
+        "text": "",
+        "role": "user"
+      }
+    ]
+  }
+}
