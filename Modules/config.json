@@ -1,0 +1,19 @@
+{
+  "CLIP": { "resolution": 224 },
+  "vision": { "fps": 24 },
+  "audio": { "bitrate": "16k" },
+  "SileroVAD": {
+    "threshold": 0.2,
+    "max_speech_duration_s": 30,
+    "min_silence_duration_ms": 500,
+    "speech_pad_ms": 200,
+    "return_seconds": true
+  },
+  "whisper": {
+    "temperature": 0.2,
+    "language": "zh",
+    "fp16": false,
+    "initial_prompt": "以下是國語（繁體中文：臺灣）影片的字幕：",
+    "word_timestamps": true
+  }
+}
