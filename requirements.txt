@@ -1,6 +1,7 @@
 python-dotenv
 google-generativeai
-PyAutoGUI
+# PyAutoGUI
+pywinauto
 pyperclip
 OpenCC
 pyaudio
@@ -10,3 +11,8 @@ torchaudio
 numpy
 soundfile
 matplotlib
+tqdm
+# davinci-resolve-api
+moviepy
+gradio
+gtts
