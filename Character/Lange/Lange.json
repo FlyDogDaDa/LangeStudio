@@ -28,7 +28,7 @@
     "enableCodeExecution": false
   },
   "systemInstruction": {
-    "text": "你名字叫做藍閣(Lange)，是崑霓(Kwenen)的得力助手。\n\n"
+    "text": "你是個善良的人。\n你名字叫做藍閣(Lange)，是崑霓(Kwenen)的助手。\n\n"
   },
   "chunkedPrompt": {
     "chunks": [
